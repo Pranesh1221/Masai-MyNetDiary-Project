@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyNetDairy</title>
+    <style>
+      * {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+          "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        margin: 0;
+      }
+      #navbar {
+        display: flex;
+        background-color: #0a9b42;
+        align-items: center;
+        justify-content: space-around;
+        padding: 12px;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 10;
+      }
+      #nav-left {
+        display: flex;
+      }
+
+      #nav-left img {
+        width: 100%;
+      }
+
+      #nav-middle {
+        display: flex;
+      }
+      #nav-middle a {
+        text-decoration: none;
+
+        font-size: 1.1rem;
+        font-weight: 600;
+      }
+      #signup {
+        color: #fff;
+        background: #ffb845;
+        background: linear-gradient(to bottom, #ffb845 0, #ff9945 100%);
+        border-color: rgba(138, 85, 70, 0.15);
+        background-clip: padding-box;
+        font-weight: 500;
+
+        text-align: center;
+        vertical-align: middle;
+
+        user-select: none;
+        background-color: transparent;
+        border: 0.2rem solid transparent;
+        padding: 8px 15px;
+        font-size: 1.4rem;
+        line-height: 1.5;
+        border-radius: 3.5rem;
+        text-transform: uppercase;
+        border: 3px solid #056000;
+      }
+      #signin {
+        color: #fff;
+        background: #0b9541;
+
+        border-color: white;
+        background-clip: padding-box;
+        font-weight: 500;
+
+        text-align: center;
+        vertical-align: middle;
+
+        user-select: none;
+        background-color: transparent;
+        border: 0.2rem solid transparent;
+        padding: 8px 15px;
+        font-size: 1.4rem;
+        line-height: 1.5;
+        border-radius: 3.5rem;
+        text-transform: uppercase;
+        border-color: rgba(11, 184, 80);
+      }
+      #nav-right a {
+        text-decoration: none;
+        color: white;
+      }
+      #nav-right {
+        display: flex;
+        gap: 40px;
+      }
+      #main-top-left {
+        width: 33.3%;
+      }
+      #main-top-div {
+        background-color: #0a9b42;
+        width: 100%;
+        display: flex;
+        margin-top: 60px;
+      }
+      #main-left-img img {
+        width: 15%;
+        margin-top: 60px;
+        margin-left: 30px;
+      }
+      #main-left-p {
+        width: 90%;
+        color: white;
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: -0.04em;
+        line-height: 1;
+        color: #fff;
+        font-size: 5.5rem;
+        margin-left: 50px;
+        margin-top: 60px;
+      }
+      #weight-p {
+        font-size: 1.5rem;
+        margin-top: 30px;
+        width: 60%;
+        font-weight: 600;
+        color: #fcf8b1;
+        margin-left: 50px;
+      }
+      #play-store {
+        display: flex;
+        gap: 30px;
+        margin-top: 60px;
+        margin-left: 50px;
+      }
+      #play-store img {
+        width: 45%;
+      }
+      #mobile-img img {
+        width: 120%;
+        margin-left: -60px;
+      }
+      #main-top-middle {
+        width: 33.3%;
+        margin-top: 60px;
+      }
+      #main-top-right {
+        display: 33.3%;
+      }
+      #beery img {
+        width: 100%;
+      }
+      #watch {
+        margin-top: -410px;
+        margin-left: -10px;
+      }
+      #watch img {
+        width: 65%;
+      }
+      #review {
+        width: 100%;
+        background-color: white;
+        /* border: 2px solid red; */
+        /* height: 500px; */
+        margin-top: -350px;
+      }
+      #review-left {
+        font-size: 1.6rem;
+        font-family: Cabin, Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        color: #46618a;
+        margin-top: 10px;
+        margin-left: 10px;
+        padding: 20px;
+      }
+      #icons img {
+        width: 31%;
+        margin-left: 10px;
+      }
+      #review-bottom {
+        width: 69%;
+        margin: auto;
+        margin-top: 200px;
+        line-height: 1.6;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+          "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        text-align: center;
+      }
+      #line1 {
+        width: 70%;
+        margin: auto;
+      }
+      #line2 {
+        width: 85%;
+        margin: auto;
+      }
+      #review-bottom p {
+        font-size: 2.3rem;
+        font-family: Cabin, Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        color: #46618a;
+      }
+      #bottom-pic-review img {
+        width: 30%;
+        margin-top: 30px;
+      }
+      #animation-pic {
+        display: flex;
+
+        margin-top: 80px;
+        justify-content: space-around;
+      }
+      .nav-animation {
+        position: relative;
+        display: inline-block;
+      }
+      .nav-animation-click {
+        color: #ffffff;
+        padding: 25px;
+        font-size: 20px;
+      }
+      .nav-animation-click:hover {
+        color: rgb(255, 142, 62);
+      }
+      .nav-animation-content {
+        display: none;
+        position: absolute;
+        background-color: #ffffff;
+        min-width: 300px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        font-size: 18px;
+        color: rgb(91, 115, 151);
+        border-radius: 3px;
+      }
+
+      .nav-animation-content a {
+        color: black;
+        padding: 10px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .nav-animation-content a:hover {
+        background-color: rgb(255, 142, 62);
+        color: #ffffff;
+        border-radius: 2px;
+      }
+
+      .nav-animation:hover .nav-animation-content {
+        display: block;
+      }
+
+      .nav-animation:hover .nav-animation-click {
+        text-decoration: none;
+        color: rgb(255, 172, 69);
+        font-weight: 500;
+        background-color: rgb(255, 255, 255);
+        width: 120px;
+
+        height: 15px;
+        border-radius: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+      <div id="nav-left">
+        <img
+          src="https://s3.amazonaws.com/img.mynetdiary.com/images/logo-main.svg"
+        />
+      </div>
+      <div id="nav-middle">
+        <div class="nav-animation">
+          <a class="nav-animation-click" href="">Features</a>
+          <div class="nav-animation-content">
+            <a href="#">Iphone & Ipad</a>
+            <a href="#">Android App</a>
+            <a href="#">MyNetDiary vs MyFitnessPal</a>
+          </div>
+        </div>
+        <div class="nav-animation">
+          <a class="nav-animation-click" href="">Diets</a>
+          <div class="nav-animation-content">
+            <a href="#">Calorie Counting</a>
+            <a href="#">Low-Carb</a>
+            <a href="#">Keto</a>
+            <a href="#">High Protien</a>
+            <a href="#">Low Fat</a>
+            <a href="#">Mediterranian</a>
+            <a href="#">Vegetarian</a>
+            <a href="#">Vegan</a>
+          </div>
+        </div>
+        <div class="nav-animation">
+          <a class="nav-animation-click" href="">Library</a>
+          <div class="nav-animation-content">
+            <a href="#">WeightLoss Blog</a>
+            <a href="#">Diet Library</a>
+            <a href="#">Dietician Team</a>
+          </div>
+        </div>
+        <div class="nav-animation">
+          <a class="nav-animation-click" href="">Food</a>
+          <div class="nav-animation-content">
+            <a href="#">Food Search</a>
+            <a href="#">Food Vendors</a>
+            <a href="#">Food Catalog</a>
+            <a href="#">DataBase Licensing & API </a>
+          </div>
+        </div>
+        <div class="nav-animation">
+          <a class="nav-animation-click" href="">Buisinesses</a>
+          <div class="nav-animation-content">
+            <a href="#">Find HealthCare Professional</a>
+            <a href="#">For HealthCare Professionals</a>
+            <a href="#">For Trainers & Club</a>
+            <a href="#">For DataBase Licensing </a>
+          </div>
+        </div>
+      </div>
+      <div id="nav-right">
+        <button id="signup"><a href="#">SIGN UP</a></button>
+        <button id="signin"><a href="#">SIGN IN</a></button>
+      </div>
+    </div>
+    <div id="main-top-div">
+      <div id="main-top-left">
+        <div id="main-left-img">
+          <img
+            src="https://s3.amazonaws.com/img.mynetdiary.com/images/bg-start-left@1x.png"
+          />
+        </div>
+        <div id="main-left-p">
+          <p>Be Healthy for Life!</p>
+        </div>
+        <div id="weight-p">
+          Your weight loss, diet, and nutrition assistant.
+        </div>
+        <div id="play-store">
+          <img
+            src="https://s3.amazonaws.com/img.mynetdiary.com/images/app-store-badge.svg"
+          />
+          <img
+            src="https://s3.amazonaws.com/img.mynetdiary.com/images/google-play-badge.svg"
+          />
+        </div>
+      </div>
+      <div id="main-top-middle">
+        <div id="mobile-img">
+          <img
+            src="https://s3.amazonaws.com/img.mynetdiary.com/images/iphonex@1x.png"
+          />
+        </div>
+      </div>
+      <div id="main-top-right">
+        <div id="beery">
+          <img
+            src="https://s3.amazonaws.com/img.mynetdiary.com/images/bg-start-right@1x.png"
+          />
+        </div>
+        <div id="watch">
+          <img
+          src=https://s3.amazonaws.com/img.mynetdiary.com/images/iwatch@1x.png>
+        </div>
+      </div>
+    </div>
+    <div id="review">
+      <div id="review-left">
+        <strong> Top Rated: </strong>61,383 reviews & counting
+      </div>
+      <div id="icons">
+        <img src="icons.png" />
+      </div>
+      <div id="review-bottom">
+        <p id="line1">“You really can't go wrong with MyNetDiary</p>
+        <p id="line2">
+          as a scientifically-proven way to help you lose weight”
+        </p>
+        <div id="bottom-pic-review">
+          <img
+            src="https://s3.amazonaws.com/img.mynetdiary.com/images/wh-logo.svg"
+          />
+        </div>
+      </div>
+    </div>
+    <div id="animation-pic">
+      <img
+        src="https://s3.amazonaws.com/img.mynetdiary.com/images/logo-usa-today.png"
+        width="253"
+        height="45"
+      />
+      <img
+        src="https://s3.amazonaws.com/img.mynetdiary.com/images/logo-abc-news.svg"
+        width="169"
+        height="60"
+      />
+      <img
+        src="https://s3.amazonaws.com/img.mynetdiary.com/images/logo-fox.svg"
+        width="117"
+        height="50"
+      />
+      <img
+        src="https://s3.amazonaws.com/img.mynetdiary.com/images/logo-times.svg"
+        width="47"
+        height="65"
+      />
+      <img
+        src="https://s3.amazonaws.com/img.mynetdiary.com/images/logo-consumer-reports.svg"
+        width="198"
+        height="50"
+      />
+      <img
+        src="https://s3.amazonaws.com/img.mynetdiary.com/images/logo-wsj.svg"
+        width="90"
+        height="50"
+      />
+      <img
+        src="https://s3.amazonaws.com/img.mynetdiary.com/images/logo-chicago-tribune.svg"
+        width="268"
+        height="40"
+      />
+    </div>
+  </body>
+</html>
+<script>
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 20) {
+      document.getElementById("navbar").style.backgroundColor = "white";
+      var bod = document.querySelectorAll(".nav-animation");
+      bod.forEach((el) => {
+        el.style.borderColor = "#cecece";
+      });
+      var atag = document.querySelectorAll(".nav-animation>a");
+      atag.forEach((element) => {
+        element.style.color = "#46618a";
+      });
+      document.getElementById("signup").style.borderColor = "#cecece";
+      document.getElementById("signin").style.borderColor = "green";
+      var sign = document.querySelectorAll("#signin>a");
+      sign.forEach((el) => {
+        el.style.color = "green";
+      });
+      document.getElementById("navbar").style.padding = "6px";
+    } else {
+      document.getElementById("navbar").style.backgroundColor = "#0a9b42";
+      var atag = document.querySelectorAll(".nav-animation>a");
+      atag.forEach((element) => {
+        element.style.color = "white";
+      });
+      document.getElementById("signup").style.borderColor = "green";
+      document.getElementById("signin").style.borderColor = "green";
+      var sign = document.querySelectorAll("#signin>a");
+      sign.forEach((el) => {
+        el.style.color = "white";
+      });
+    }
+  });
+</script>
