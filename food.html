@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="food.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>MynetDiary</title>
+    <style></style>
+  </head>
+
+  <body>
+    <div class="nav__bar">
+      <div class="nav__bar__top">
+        <div class="nav__bar__top__logo">
+          <img
+            src="https://github.com/AbhinavRajSing/magnesium/blob/main/images/mynet2.PNG?raw=true"
+            alt=""
+          />
+        </div>
+        <div class="nav__bar__top__right">
+          <img
+            src="https://www.mynetdiary.com/img/Premium_planning_x2.png"
+            alt=""
+          />
+          <div class="dropdown">
+            <a class="dropbtn" href=""><i class="fas fa-ellipsis-v"></i></a>
+            <div class="dropdown-content">
+              <a href="index.html">LOG OUT</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav__bar__bottom">
+        <a href="dashboard.html">DASHBOARD</a>
+        <a href="plan.html">PLAN</a>
+        <a href="food.html">FOOD</a>
+        <a href="exercise.html">EXERCISE</a>
+        <a href="analysis.html">ANALYSIS</a>
+        <a href="#">COMMUNITY</a>
+        <a href="settingsPage.html">SETTINGS</a>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="top">
+        <i
+          class="fa fa-search"
+          style="font-size: 24px; color: grey; margin: 30px 10px 10px 20px"
+        ></i>
+        <i
+          class="fa fa-star-o"
+          style="font-size: 24px; color: grey; margin: 30px 10px 10px 20px"
+        ></i>
+        <img
+          class="img"
+          src="https://s3.amazonaws.com/img.mynetdiary.com/premiumrecipe/ic_premium_recipes.png"
+          height="24px"
+          width="24px"
+        />
+
+        <p class="cmd">Consumed Food:</p>
+        <p class="cl">Calories count</p>
+        <p class="ft">Fats</p>
+        <p class="ptn">Protien</p>
+        <p class="fdg">Fd Grade</p>
+        <p class="cbs">Carbs</p>
+      </div>
+      <div class="brkfst">
+        <p class="p1">BREAKFAST</p>
+        <br />
+        <select class="brk" id="brk">
+          <option class="op" id="op1"></option>
+          <option class="op" id="op2"></option>
+          <option class="op" id="op3"></option>
+          <option class="op" id="op4"></option>
+        </select>
+        <button id="btn1">ADD</button>
+        <div class="inr" id="inr"></div>
+      </div>
+
+      <div class="top">
+        <p class="cmd1">Consumed Food:</p>
+        <p class="cl">Calories count</p>
+        <p class="ft">Fats</p>
+        <p class="ptn">Protien</p>
+        <p class="fdg">Fd Grade</p>
+        <p class="cbs">Carbs</p>
+      </div>
+      <div class="brkfst">
+        <p class="p1">LUNCH</p>
+        <select class="brk1" id="lnc">
+          <option class="op" id="op5"></option>
+          <option class="op" id="op6"></option>
+          <option class="op" id="op7"></option>
+          <option class="op" id="op8"></option>
+        </select>
+        <button id="btn2">ADD</button>
+        <div class="inr" id="inr1"></div>
+      </div>
+      <div class="top">
+        <p class="cmd1">Consumed Food:</p>
+        <p class="cl">Calories count</p>
+        <p class="ft">Fats</p>
+        <p class="ptn">Protien</p>
+        <p class="fdg">Fd Grade</p>
+        <p class="cbs">Carbs</p>
+      </div>
+
+      <div class="brkfst">
+        <p class="p1">DINNER</p>
+        <select class="brk1" id="dnr">
+          <option class="op" id="op9"></option>
+          <option class="op" id="op10"></option>
+          <option class="op" id="op11"></option>
+          <option class="op" id="op12"></option>
+        </select>
+        <button id="btn3">ADD</button>
+        <div class="inr" id="inr2"></div>
+      </div>
+      <div class="top">
+        <p class="cmd1">Consumed Food:</p>
+        <p class="cl">Calories count</p>
+        <p class="ft">Fats</p>
+        <p class="ptn">Protien</p>
+        <p class="fdg">Fd Grade</p>
+        <p class="cbs">Carbs</p>
+      </div>
+      <div class="brkfst">
+        <p class="p1">SNACKS</p>
+        <select class="brk1" id="snc">
+          <option class="op" id="op13"></option>
+          <option class="op" id="op14"></option>
+          <option class="op" id="op15"></option>
+          <option class="op" id="op16"></option>
+        </select>
+        <button id="btn4">ADD</button>
+        <div class="inr" id="inr3"></div>
+      </div>
+      <div class="graph">
+        <button id="grf">SHOW GRAPH</button>
+        <div id="chartContainer" style="height: 300px; width: 40%"></div>
+        <button id="total">TOTAL</button>
+        <div class="brkfst1" id="brkfst1">
+          <p>DAY LOG</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="plan__footer">
+      <div class="plan__footer__one">
+        <h5>&copy; 2020 MyNetDiary Inc.</h5>
+        <h6>
+          All Rights Reserved. MyNetDiary is a regestered trademark <br />of
+          MyNetDiary Inc.
+        </h6>
+      </div>
+      <div class="plan__footer__two">
+        <ul>
+          <li>Sucess Stories</li>
+          <li>Efficiency Report</li>
+          <li>Menmber Testimonials</li>
+          <li>Community</li>
+          <li>Dietician's Blog</li>
+          <li>Ask a Dietician</li>
+          <li>Instant Food Search</li>
+          <li>Diabities and health</li>
+          <li>tracking</li>
+        </ul>
+      </div>
+      <div class="plan__footer__three">
+        <ul>
+          <li>iphone/ipod App</li>
+          <li>Ipad App</li>
+          <li>Android App</li>
+          <li>Diabties app for phone</li>
+          <li>Diabities app for Android</li>
+          <li>Poducts and features</li>
+          <li>Fit Bit Liking</li>
+          <li>Withings Linking</li>
+          <li>Garmin Linking</li>
+          <li>Twitter linking</li>
+        </ul>
+      </div>
+      <div class="plan__footer__four">
+        <ul>
+          <li>Gift Cards & Group discounts</li>
+          <li>For Trainers</li>
+          <li>For Healthcare Professionals</li>
+          <li>For Falimies</li>
+        </ul>
+      </div>
+      <div class="plan__footer__five">
+        <ul>
+          <li>Help</li>
+          <li>Learan More</li>
+          <li>Diet Articles</li>
+          <li>About</li>
+          <li>Privacy Policy</li>
+          <li>Terms Of Use</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="food.js"></script>
+  </body>
+</html>
