@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+*{
+    font-family: 'Rubik', sans-serif;
+}
+#main{
+    display: flex;
+    margin: auto;
+    width: 95%;
+   
+}
+#left{
+  
+     width: 30%;
+     color: rgb(70, 97, 138); 
+     font-weight: bolder;
+     font-size: 1.5rem;
+     margin-top: 10px;
+     
+}
+#foodSearch{
+    
+    background-color: rgb(247, 245, 242);
+    width: 80%;
+    padding:20px 0;
+    border-bottom: 1px dotted rgb(70, 97, 138);
+    margin-bottom: 0px;
+}
+#foodSearch:hover{
+   text-decoration: underline;
+}
+#dataBase{
+    width: 80%;
+    border-bottom: 1px dotted rgb(70, 97, 138);
+    padding:20px 0;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    text-decoration: underline;
+}
+
+/* .icon {
+
+    background: url("https://img.icons8.com/external-anggara-outline-color-anggara-putra/2x/external-search-social-media-interface-anggara-outline-color-anggara-putra.png") no-repeat;
+    background-size: 30px;
+    background-position: 10px 10px;
+     background: fixed;
+} */
+#right{
+    width: 70%;
+    box-sizing: border-box;
+    margin: auto;
+}
+#top {
+    
+    background-color: rgb(247, 245, 242);
+    width: 100%;
+    color: rgb(70, 97, 138);
+    padding: 35px;
+    font-size: 1.2rem;
+    margin-top: 30px;
+    border-radius: 15px;
+    box-sizing: border-box;
+   
+}
+
+.link {
+    color: rgb(223, 77, 77);
+    text-decoration: underline;
+}
+
+#top>div {
+    margin: 20px;
+    display: flex;
+    padding: 3px;
+}
+
+#top>div p {
+    padding: 2px;
+}
+
+input[type="text"] {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+#searchItm {
+    width: 96%;
+    padding: 15px;
+    margin: auto;
+    border: 2px solid rgb(223, 77, 77);
+    background-color: white;
+    border-radius: 5px;
+    
+}
+#content{
+    width: 100%;
+    box-sizing: border-box;
+}
+.card{
+    box-sizing: border-box;
+    width: 100%;
+    background-color: rgb(247, 245, 242);
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 20px;
+}
+.card img{
+    width: 3vw;
+    height: 3vh;
+}
+.detail{
+    display: flex;
+    margin-top: -20px;
+}
+.detail p{
+    margin-right: 10px;
+}
+.calory{
+    position: absolute;
+    right: 100px;
+    font-size: 1.8rem;
+    color: rgb(75, 116, 177);
+    font-weight: bold;
+}
+.name{
+    font-size: 1.2rem;
+    color: rgb(75, 116, 177);
+    font-weight: bold;
+}
+.image{
+    margin-right: 30px;
+}
