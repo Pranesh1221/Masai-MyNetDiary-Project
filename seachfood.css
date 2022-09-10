@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+* {
+  font-family: "Rubik", sans-serif;
+}
+#main {
+  display: flex;
+  margin: auto;
+  width: 95%;
+  margin-top: 200px;
+}
+#left {
+  width: 30%;
+  color: rgb(70, 97, 138);
+  font-weight: bolder;
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+#foodSearch {
+  background-color: rgb(247, 245, 242);
+  width: 80%;
+  padding: 20px 0;
+  border-bottom: 1px dotted rgb(70, 97, 138);
+  margin-bottom: 0px;
+}
+#foodSearch:hover {
+  text-decoration: underline;
+}
+#dataBase {
+  width: 80%;
+  border-bottom: 1px dotted rgb(70, 97, 138);
+  padding: 20px 0;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  text-decoration: underline;
+}
+
+/* .icon {
+    background: url("https://img.icons8.com/external-anggara-outline-color-anggara-putra/2x/external-search-social-media-interface-anggara-outline-color-anggara-putra.png") no-repeat;
+    background-size: 30px;
+    background-position: 10px 10px;
+     background: fixed;
+} */
+#right {
+  width: 70%;
+  box-sizing: border-box;
+  margin: auto;
+}
+#top {
+  background-color: rgb(247, 245, 242);
+  width: 100%;
+  color: rgb(70, 97, 138);
+  padding: 35px;
+  font-size: 1.2rem;
+  margin-top: 30px;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+.link {
+  color: rgb(223, 77, 77);
+  text-decoration: underline;
+}
+
+#top > div {
+  margin: 20px;
+  display: flex;
+  padding: 3px;
+}
+
+#top > div p {
+  padding: 2px;
+}
+
+input[type="text"] {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+#searchItm {
+  width: 96%;
+  padding: 15px;
+  margin: auto;
+  border: 2px solid rgb(223, 77, 77);
+  background-color: white;
+  border-radius: 5px;
+}
+#content {
+  width: 100%;
+  box-sizing: border-box;
+}
+.card {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: rgb(247, 245, 242);
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 20px;
+}
+.card img {
+  width: 3vw;
+  height: 3vh;
+}
+.detail {
+  display: flex;
+  margin-top: 20px;
+}
+.detail p {
+  margin-right: 10px;
+}
+.calory {
+  position: absolute;
+  right: 100px;
+  font-size: 1.8rem;
+  color: rgb(75, 116, 177);
+  font-weight: bold;
+}
+.name {
+  font-size: 1.2rem;
+  color: rgb(75, 116, 177);
+  font-weight: bold;
+}
+.image {
+  margin-right: 30px;
+}
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  margin: 0;
+}
+#navbar {
+  display: flex;
+  background-color: #0a9b42;
+  align-items: center;
+  justify-content: space-around;
+  padding: 12px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+#nav-left {
+  display: flex;
+}
+
+#nav-left img {
+  width: 100%;
+}
+
+#nav-middle {
+  display: flex;
+}
+#nav-middle a {
+  text-decoration: none;
+
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+#signup {
+  color: #fff;
+  background: #ffb845;
+  background: linear-gradient(to bottom, #ffb845 0, #ff9945 100%);
+  border-color: rgba(138, 85, 70, 0.15);
+  background-clip: padding-box;
+  font-weight: 500;
+
+  text-align: center;
+  vertical-align: middle;
+
+  user-select: none;
+  background-color: transparent;
+  border: 0.2rem solid transparent;
+  padding: 8px 15px;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  border-radius: 3.5rem;
+  text-transform: uppercase;
+  border: 3px solid #056000;
+}
+#signin {
+  color: #fff;
+  background: #0b9541;
+
+  border-color: white;
+  background-clip: padding-box;
+  font-weight: 500;
+
+  text-align: center;
+  vertical-align: middle;
+
+  user-select: none;
+  background-color: transparent;
+  border: 0.2rem solid transparent;
+  padding: 8px 15px;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  border-radius: 3.5rem;
+  text-transform: uppercase;
+  border-color: rgba(11, 184, 80);
+}
+#nav-right a {
+  text-decoration: none;
+  color: white;
+}
+#nav-right {
+  display: flex;
+  gap: 40px;
+}
+.nav-animation {
+  position: relative;
+  display: inline-block;
+}
+.nav-animation-click {
+  color: #ffffff;
+  padding: 25px;
+  font-size: 20px;
+}
+.nav-animation-click:hover {
+  color: rgb(255, 142, 62);
+}
+.nav-animation-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  font-size: 18px;
+  color: rgb(91, 115, 151);
+  border-radius: 3px;
+}
+
+.nav-animation-content a {
+  color: black;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.nav-animation-content a:hover {
+  background-color: rgb(255, 142, 62);
+  color: #ffffff;
+  border-radius: 2px;
+}
+
+.nav-animation:hover .nav-animation-content {
+  display: block;
+}
+
+.nav-animation:hover .nav-animation-click {
+  text-decoration: none;
+  color: rgb(255, 172, 69);
+  font-weight: 500;
+  background-color: rgb(255, 255, 255);
+  width: 120px;
+
+  height: 15px;
+  border-radius: 3px;
+}

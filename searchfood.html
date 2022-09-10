@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SearchFood</title>
+    <link rel="stylesheet" href="./seachfood.css" />
+
+    <script defer src="./seachfood.js"></script>
+  </head>
+
+  <body>
+    <div id="navbar">
+      <div id="nav-left">
+        <a href="index.html"
+          ><img
+            src="https://s3.amazonaws.com/img.mynetdiary.com/images/logo-dark.svg"
+        /></a>
+      </div>
+      <div id="nav-middle">
+        <div class="nav-animation">
+          <a class="nav-animation-click" href="">Features</a>
+          <div class="nav-animation-content">
+            <a href="#">Iphone & Ipad</a>
+            <a href="#">Android App</a>
+            <a href="#">User Reviews</a>
+            <a href="#">MyNetDiary vs MyFitnessPal</a>
+          </div>
+        </div>
+        <div class="nav-animation">
+          <a class="nav-animation-click" href="">Diets</a>
+          <div class="nav-animation-content">
+            <a href="#">Calorie Counting</a>
+            <a href="#">Low-Carb</a>
+            <a href="#">Keto</a>
+            <a href="#">High Protien</a>
+            <a href="#">Low Fat</a>
+            <a href="#">Mediterranian</a>
+            <a href="#">Vegetarian</a>
+            <a href="#">Vegan</a>
+          </div>
+        </div>
+        <div class="nav-animation">
+          <a class="nav-animation-click" href="">Library</a>
+          <div class="nav-animation-content">
+            <a href="#">WeightLoss Blog</a>
+            <a href="#">Diet Library</a>
+            <a href="#">Dietician Team</a>
+          </div>
+        </div>
+        <div class="nav-animation">
+          <a class="nav-animation-click" href="">Food</a>
+          <div class="nav-animation-content">
+            <a href="searchfood.html">Food Search</a>
+            <a href="#">DataBase Licensing & API </a>
+          </div>
+        </div>
+        <div class="nav-animation">
+          <a class="nav-animation-click" href="">Buisinesses</a>
+          <div class="nav-animation-content">
+            <a href="#">Find HealthCare Professional</a>
+            <a href="#">For HealthCare Professionals</a>
+            <a href="#">For Trainers & Club</a>
+            <a href="#">MyNetDiary vs MyFitnessPal</a>
+            <a href="#">Food DataBase Licensing </a>
+          </div>
+        </div>
+      </div>
+      <div id="nav-right">
+        <button id="signup"><a href="#">SIGN UP</a></button>
+        <button id="signin"><a href="#">SIGN IN</a></button>
+      </div>
+    </div>
+    <div id="main">
+      <div id="left">
+        <p id="foodSearch">Food Search</p>
+        <p id="dataBase">DataBase Licensing & API</p>
+      </div>
+
+      <div id="right">
+        <div id="top">
+          <p>
+            The most complete, accurate and up-to-date nutrition database in the
+            English-speaking world. There are total
+            <strong>1,240,000 </strong>foods in the catalog. We add and verify
+            about 900 foods every day. Type food or vendor name to see instant
+            results.
+          </p>
+          <div>
+            <p>E.g.</p>
+            <p></p>
+            <p class="link">Starbucks,</p>
+            <p class="link">McDonald's,</p>
+            <p class="link">apple</p>
+            <p>or</p>
+            <p class="link">whole milk:</p>
+          </div>
+          <input
+            type="text"
+            id="searchItm"
+            placeholder="Enter Food,Brand Or Restaurant"
+          />
+        </div>
+        <div id="content"></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,327 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #f0f0f0;
+  font-family: "Roboto", sans-serif;
+}
+.nav__bar {
+  background-color: rgb(59, 131, 2);
+  width: 100%;
+  height: 125px;
+}
+.nav__bar__top {
+  width: 90%;
+  height: 70px;
+  margin: auto;
+  display: flex;
+}
+.nav__bar__top__logo {
+  width: 20%;
+  height: 100%;
+}
+.nav__bar__top__logo img {
+  width: 100%;
+  padding-top: 10px;
+}
+.nav__bar__top__right {
+  width: 19%;
+  height: 100%;
+  margin-left: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+.nav__bar__top__right img:nth-child(1) {
+  width: 85%;
+}
+.nav__bar__top__right img:nth-child(2) {
+  width: 27px;
+  height: 27px;
+}
+.nav__bar__bottom {
+  width: 1090px;
+  height: 30px;
+  margin-left: 120px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav__bar__bottom a {
+  font-size: 13px;
+  color: rgb(255, 255, 247);
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  text-decoration: none;
+}
+.nav__bar__bottom a:hover {
+  transform: scale(1.05);
+  color: #ffffffff;
+  box-shadow: 1px 1px 1px rgb(128, 128, 128);
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  color: black;
+}
+.dropbtn {
+  color: #ffffff;
+  padding: 25px;
+  font-size: 20px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  font-size: 15px;
+  color: rgb(91, 115, 151);
+  border-radius: 3px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(255, 142, 62);
+  color: #ffffff;
+  border-radius: 2px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  text-decoration: none;
+  color: rgb(255, 172, 69);
+  font-weight: 500;
+  background-color: rgb(255, 255, 255);
+  width: 120px;
+  height: 15px;
+  border-radius: 3px;
+}
+.dashboard__middle {
+  width: 1150px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.dashboard__middle__left {
+  width: 49%;
+}
+.dashboard__middle__left > div {
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
+.dashboard__middle__right > div {
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
+
+.dashboard__middle__right {
+  width: 49%;
+}
+.left__first,
+.left__second,
+.left__third,
+.right__first,
+.right__second,
+.right__fourth {
+  background-color: white;
+  position: relative;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.heading {
+  width: fit-content;
+  margin: auto;
+  text-align: center;
+}
+.heading > h4 {
+  margin: 0;
+  color: grey;
+}
+.heading > h2 {
+  color: #3c9ec3;
+  margin: 0;
+}
+.logbtn {
+  width: 50px;
+  height: 50px;
+  background-color: #3c9ec3;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  border-radius: 25px;
+  border: none;
+  font-size: 25px;
+  color: white;
+}
+.dots {
+  height: 20px;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+.second__head,
+.third__head {
+  display: flex;
+  margin-left: 20px;
+  align-items: center;
+}
+.second__bottom {
+  width: 150px;
+  display: flex;
+  color: rgb(8, 162, 189);
+  justify-content: space-between;
+  margin-left: 60%;
+}
+.third__middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px 50px 20px;
+}
+.third__bottom {
+  width: 150px;
+  display: flex;
+  margin-left: 60%;
+  justify-content: space-between;
+}
+.left__third {
+  padding-bottom: 132px;
+}
+.right__first {
+  padding: 16px 20px;
+  margin-bottom: 20px;
+}
+.right__first__head {
+  display: flex;
+  align-items: center;
+}
+.right__second__head {
+  display: flex;
+  padding-left: 20px;
+}
+.right__second__middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.right__second__bottom {
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+  text-align: right;
+  padding: 0 20px;
+  margin-left: 50%;
+}
+.right__third {
+  margin-bottom: 20px;
+  margin-top: -20px;
+  padding-top: 0px;
+  border-radius: 10px;
+}
+.right__fourth {
+  padding-left: 20px;
+}
+.right__fourth__head {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+.right__fourth__bottom {
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+  margin-left: 50%;
+}
+.middle__bottom {
+  width: 1130px;
+  margin: -30px auto;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+.bottom__first {
+  display: flex;
+  border-bottom: 2px solid rgb(165, 157, 157);
+  align-items: center;
+}
+.bottom__second {
+  display: flex;
+  justify-content: space-between;
+}
+.bottom__second__left,
+.bottom__second__right {
+  display: flex;
+  width: 48%;
+  justify-content: space-between;
+  align-items: center;
+}
+.dashboard__footer {
+  width: 100%;
+  height: 330px;
+  margin-top: 60px;
+  background: rgb(59, 131, 2);
+  display: flex;
+  font-family: "Roboto", sans-serif;
+}
+.dashboard__footer__one {
+  width: 28%;
+  height: 100%;
+  margin-left: 30px;
+}
+.dashboard__footer__two,
+.dashboard__footer__three,
+.dashboard__footer__four,
+.dashboard__footer__five {
+  width: 15%;
+  height: 100%;
+  margin-left: 30px;
+}
+.dashboard__footer__two li:hover,
+.dashboard__footer__three li:hover,
+.dashboard__footer__four li:hover,
+.dashboard__footer__five li:hover {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.726);
+  transform: scale(1.03);
+}
+.dashboard__footer__one h5 {
+  color: rgb(242, 255, 255);
+  font-size: 17px;
+  padding: 10px;
+  margin-top: 50px;
+}
+.dashboard__footer__one h6 {
+  color: rgb(186, 210, 114);
+  font-size: 13px;
+}
+.dashboard__footer__two,
+.dashboard__footer__three,
+.dashboard__footer__four,
+.dashboard__footer__five li {
+  color: rgba(242, 255, 255, 0.836);
+  font-size: 14px;
+  line-height: 28px;
+  padding-top: 10px;
+}
+#right-fourth-h3 {
+  margin-left: 50px;
+}
