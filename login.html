@@ -1,203 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="https://www.mynetdiary.com/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://www.mynetdiary.com/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
     <title>Login</title>
     <style>
-        body {
-            background: #F4F0ED;
-            background-size: 100% 100%;
-        }
+      body {
+        background: #f4f0ed;
+        background-size: 100% 100%;
+      }
 
-        #su-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            height: 100vh;
-            background: #069D42;
-            background-image: url("https://www.mynetdiary.com/images/bg-start-signup@1x.png");
-            background-repeat: no-repeat;
-            border-bottom-left-radius: 50% 20px;
-            border-bottom-right-radius: 50% 20px;
-        }
+      #su-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 100vh;
+        background: #069d42;
+        background-image: url("https://www.mynetdiary.com/images/bg-start-signup@1x.png");
+        background-repeat: no-repeat;
+        border-bottom-left-radius: 50% 20px;
+        border-bottom-right-radius: 50% 20px;
+      }
 
-        #second {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background: white;
-            height: 80%;
-            width: 70%;
-            height: 100%;
-            gap:20px;
-            border-radius: 30px;
-        }
+      #second {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: white;
+        height: 80%;
+        width: 70%;
+        height: 100%;
+        gap: 20px;
+        border-radius: 30px;
+      }
 
-        #third {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: nowrap;
-            width: 100%;
-            height: 100px;
-            background: #F4F0ED;
-        }
+      #third {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        width: 100%;
+        height: 100px;
+        background: #f4f0ed;
+      }
 
-        #third>p {
-            display: flex;
-            gap: 10px;
-        }
+      #third > p {
+        display: flex;
+        gap: 10px;
+      }
 
-        #TellUs {
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        .second-heading{
-            color: #268FD0;
-        }
-        #TellUs>h4 {
-            font-size: 2rem;
-        }
+      #TellUs {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .second-heading {
+        color: #268fd0;
+      }
+      #TellUs > h4 {
+        font-size: 2rem;
+      }
 
-        #info {
-            width: 40%;
-            text-align: left;
-        }
-        #login-div{
-            display: flex;
-            flex-direction: row;
-            gap:10px;
-            justify-content: space-between;
-        }
+      #info {
+        width: 40%;
+        text-align: left;
+      }
+      #login-div {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        justify-content: space-between;
+      }
 
-        .input1 > input{
-            border-top: none;
-            border-left: none;
-            border-right: none;
-        }
-        #freeinfo
-        {
-            width: 80%;
-            text-align: center;
-            background-color:#F7F5F2;
-        }
-        #firstlogin
-        {
-            margin-top: 50px;
-            width: 50%;
-            box-shadow: 3px 0 0px -2px #888;
-            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 0 0;
-        }
-        #secondlogin
-        {
-            width: 40%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            gap:10px;
-        }
+      .input1 > input {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+      }
+      #freeinfo {
+        width: 80%;
+        text-align: center;
+        background-color: #f7f5f2;
+      }
+      #firstlogin {
+        margin-top: 50px;
+        width: 50%;
+        box-shadow: 3px 0 0px -2px #888;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 0 0;
+      }
+      #secondlogin {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="su-container">
-        <div id="first">
-            <img data-src="https://s3.amazonaws.com/img.mynetdiary.com/images/logo-dark.svg" alt="MyNetDiary"
-                width="300" class="img-fluid w-100 ls-is-cached lazyloaded"
-                src="https://s3.amazonaws.com/img.mynetdiary.com/images/logo-dark.svg">
+      <div id="first">
+        <img
+          data-src="https://s3.amazonaws.com/img.mynetdiary.com/images/logo-dark.svg"
+          alt="MyNetDiary"
+          width="300"
+          class="img-fluid w-100 ls-is-cached lazyloaded"
+          src="https://s3.amazonaws.com/img.mynetdiary.com/images/logo-dark.svg"
+        />
+      </div>
+      <div id="second">
+        <div id="TellUs">
+          <h4 class="second-heading">Sign In</h4>
         </div>
-        <div id="second">
-           
-            <div id="TellUs">
-                <h4 class="second-heading">Sign In</h4>
+        <div id="freeinfo">
+          <div class="media signin__notification">
+            <svg width="20px" height="35px" class="mt-1 mr-4">
+              <path
+                fill-rule="evenodd"
+                fill="rgb(109, 109, 109)"
+                d="M3.333,0.000 C1.487,0.000 -0.000,1.341 -0.000,3.006 L-0.000,31.994 C-0.000,33.659 1.487,35.000 3.333,35.000 L16.667,35.000 C18.513,35.000 20.000,33.659 20.000,31.994 L20.000,3.006 C20.000,1.341 18.513,0.000 16.667,0.000 L3.333,0.000 ZM2.083,4.758 L17.917,4.758 L17.917,29.739 L2.083,29.739 L2.083,4.758 ZM10.000,30.867 C10.920,30.867 11.667,31.540 11.667,32.370 C11.667,33.200 10.920,33.873 10.000,33.873 C9.080,33.873 8.333,33.200 8.333,32.370 C8.333,31.540 9.080,30.867 10.000,30.867 Z"
+              ></path>
+            </svg>
+            <div class="media-body" style="font-weight: 400">
+              If you use one of MyNetDiary’s mobile apps, please sign in with
+              the same account name or email as you do in your MyNetDiary mobile
+              app. You can see account name on the Settings screen in the mobile
+              app.
             </div>
-            <div id="freeinfo">
-                <div class="media signin__notification"><svg width="20px" height="35px" class="mt-1 mr-4"><path fill-rule="evenodd" fill="rgb(109, 109, 109)" d="M3.333,0.000 C1.487,0.000 -0.000,1.341 -0.000,3.006 L-0.000,31.994 C-0.000,33.659 1.487,35.000 3.333,35.000 L16.667,35.000 C18.513,35.000 20.000,33.659 20.000,31.994 L20.000,3.006 C20.000,1.341 18.513,0.000 16.667,0.000 L3.333,0.000 ZM2.083,4.758 L17.917,4.758 L17.917,29.739 L2.083,29.739 L2.083,4.758 ZM10.000,30.867 C10.920,30.867 11.667,31.540 11.667,32.370 C11.667,33.200 10.920,33.873 10.000,33.873 C9.080,33.873 8.333,33.200 8.333,32.370 C8.333,31.540 9.080,30.867 10.000,30.867 Z"></path></svg><div class="media-body" style="font-weight: 400;">If you use one of MyNetDiary’s mobile apps, please sign in with the same account name or email as you do in your MyNetDiary mobile app. You can see account name on the Settings screen in the mobile app.</div></div>
-            </div>
-            <div id="login-div">
-                <div id="firstlogin">
-                    <div id="inputemail">
-                
-                          <!-- Email input -->
-                          <div class="form-outline mb-4 input1">
-                            <input type="email" id="input-email" class="form-control form-control-lg"
-                              placeholder="Email" />
-                          </div>
-                
-                          <!-- Password input -->
-                          <div class="form-outline mb-3 input1">
-                            <input type="password" id="input-password" class="form-control form-control-lg"
-                              placeholder="password" />
-                          </div>
-                
-                          <div class="text-center text-lg-start mt-4 pt-2">
-                            <label id="inputValidation" style="color: red; font-size:small;"></label>
-                            
-                          </div>
-                
-                          <div class="text-center text-lg-start mt-4 pt-2">
-                            <button type="button" class="btn btn-primary btn-lg"
-                              style="padding-left: 2.5rem; padding-right: 2.5rem;" onclick="doLogin()">Login</button>
-                            
-                          </div>
-                
-                    </div>
-                </div>
-                <div id="secondlogin">
-                    <button type="button" class="btn btn-info" style="background:#365899;">SIGN UP WITH FACEBOOK</button>
-                    <button type="button" class="btn btn-primary" style="background:#376FCB">SIGN UP WITH GOOGLE</button>
-                    <button type="button" class="btn btn-dark" style="background:#333333;">SIGH UP WITH APPLE</button>
-                </div>               
-            </div>
-            <div id="lastdiv">
-                No account? <a href="signup.html">Sign Up</a>, it's easy.
-            </div>
+          </div>
         </div>
-        <div id="third">
-            <p class="_terms">By signing up, you are agreeing to the <br class="d-block d-sm-none"><a href="/terms.html"
-                    target="_blank" class="text-underline">Terms of Service</a></p>
+        <div id="login-div">
+          <div id="firstlogin">
+            <div id="inputemail">
+              <!-- Email input -->
+              <div class="form-outline mb-4 input1">
+                <input
+                  type="email"
+                  id="input-email"
+                  class="form-control form-control-lg"
+                  placeholder="Email"
+                />
+              </div>
+
+              <!-- Password input -->
+              <div class="form-outline mb-3 input1">
+                <input
+                  type="password"
+                  id="input-password"
+                  class="form-control form-control-lg"
+                  placeholder="password"
+                />
+              </div>
+
+              <div class="text-center text-lg-start mt-4 pt-2">
+                <label
+                  id="inputValidation"
+                  style="color: red; font-size: small"
+                ></label>
+              </div>
+
+              <div class="text-center text-lg-start mt-4 pt-2">
+                <button
+                  type="button"
+                  class="btn btn-primary btn-lg"
+                  style="padding-left: 2.5rem; padding-right: 2.5rem"
+                  onclick="doLogin()"
+                >
+                  Login
+                </button>
+              </div>
+            </div>
+          </div>
+          <div id="secondlogin">
+            <button
+              type="button"
+              class="btn btn-info"
+              style="background: #365899"
+            >
+              SIGN UP WITH FACEBOOK
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              style="background: #376fcb"
+            >
+              SIGN UP WITH GOOGLE
+            </button>
+            <button
+              type="button"
+              class="btn btn-dark"
+              style="background: #333333"
+            >
+              SIGH UP WITH APPLE
+            </button>
+          </div>
         </div>
+        <div id="lastdiv">
+          No account? <a href="signup.html">Sign Up</a>, it's easy.
+        </div>
+      </div>
+      <div id="third">
+        <p class="_terms">
+          By signing up, you are agreeing to the
+          <br class="d-block d-sm-none" /><a
+            href="/terms.html"
+            target="_blank"
+            class="text-underline"
+            >Terms of Service</a
+          >
+        </p>
+      </div>
     </div>
-</body>
-    <script>
-        function signUp(){
-            document.getElementById("loginbutton").style.display = "none";
-           document.getElementById("inputemail").style.visibility = "visible";
+  </body>
+  <script>
+    function signUp() {
+      document.getElementById("loginbutton").style.display = "none";
+      document.getElementById("inputemail").style.visibility = "visible";
+    }
+    function doLogin() {
+      email = document.getElementById("input-email").value;
+      password = document.getElementById("input-password").value;
+      var users = JSON.parse(localStorage.getItem("user")) || [];
+      var loginSuccess = false;
+      users.forEach((element) => {
+        if (element.email == email && element.password == password) {
+          loginSuccess = true;
         }
-        function doLogin(){
-            email = document.getElementById("input-email").value
-            password = document.getElementById("input-password").value
-            var users = JSON.parse(localStorage.getItem("user")) || []
-            var loginSuccess = false;
-            users.forEach(element => {
-                if(element.email == email && element.password == password)
-                {
-                    loginSuccess = true;
-
-                }
-            });
-            if(!loginSuccess)
-            {
-                document.getElementById("inputValidation").innerText = "Invalid login or password."
-            }
-            else
-            {
-                window.location = "index.html"
-            }
-        }
-    </script>
-
+        console.log(element.email, email, password, element.password);
+      });
+      if (!loginSuccess) {
+        document.getElementById("inputValidation").innerText =
+          "Invalid login or password.";
+      } else {
+        window.location = "dashboard.html";
+      }
+    }
+  </script>
 </html>
