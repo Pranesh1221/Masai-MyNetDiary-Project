@@ -39,7 +39,7 @@ document.getElementById("searchItm").addEventListener(
   debounce(async () => {
     var item = document.getElementById("searchItm").value;
     var res = await fetch(
-      `https://mynetdiaryfood-api.herokuapp.com/Food?q=${item}`
+      `https://mynetdiary-api.onrender.com/Food?q=${item}`
     );
     var res2 = await res.json();
     console.log(res2);
